@@ -1,0 +1,309 @@
+{
+  "info": {
+    "_postman_id": "8f1e96b1-6add-41f9-9c78-eda0d310b724",
+    "name": "tablelink",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "13029874",
+    "_collection_link": "https://go.postman.co/collection/13029874-8f1e96b1-6add-41f9-9c78-eda0d310b724?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "get ingredients",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8080/api/ingredients?offset=0&limit=10",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "ingredients"
+          ],
+          "query": [
+            {
+              "key": "offset",
+              "value": "0"
+            },
+            {
+              "key": "limit",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "posts ingredients",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Palm Oil\",\n  \"cause_alergy\": false,\n  \"type\": 1,\n  \"status\": 2\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8080/api/ingredients",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "ingredients"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "put ingredients",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Palm Sugar New\",\n  \"cause_alergy\": true,\n  \"type\": 1,\n  \"status\": 2\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8080/api/ingredients/ff5f74a5-901a-4d3f-9656-fc1fb35b6493",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "ingredients",
+            "ff5f74a5-901a-4d3f-9656-fc1fb35b6493"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete ingredients",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8080/api/ingredients/ff5f74a5-901a-4d3f-9656-fc1fb35b6493",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "ingredients",
+            "ff5f74a5-901a-4d3f-9656-fc1fb35b6493"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get item",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8080/api/items?offset=0&limit=10",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "items"
+          ],
+          "query": [
+            {
+              "key": "offset",
+              "value": "0"
+            },
+            {
+              "key": "limit",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "posts items",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Palm Oil Sugar\",\n  \"price\": 10000.00,\n  \"status\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8080/api/items",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "items"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "put item",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Palm Oil Raw\",\n  \"price\": 10000.00,\n  \"status\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8080/api/items/ff34d7e5-8d7b-4862-8451-989487434d2d",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "items",
+            "ff34d7e5-8d7b-4862-8451-989487434d2d"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete items",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8080/api/items/ff34d7e5-8d7b-4862-8451-989487434d2d",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "items",
+            "ff34d7e5-8d7b-4862-8451-989487434d2d"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete items ingredients",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"uuid_item\": \"07419b87-4702-49f9-83aa-f9b489f64b14\",\n    \"uuid_ingredient\": \"8666d298-517b-45f3-8566-378cb5c8738c\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8080/api/items-ingredients",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "items-ingredients"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
